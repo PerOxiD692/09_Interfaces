@@ -17,10 +17,14 @@ public class App {
 
         ausgabe("----------------");
 
+        Bird bird = new Bird();
+        ausgabe(bird.fly());
+        ausgabe(bird.doYourJob());
+
         // Das sollte eigentlich nicht möglich sein
 	    // --> Lösung: Abstrakte Klasse 
-        HoneyBee bee = new HoneyBee();
-        ausgabe(bee.doYourJob());
+        // HoneyBee bee = new HoneyBee();
+        // ausgabe(bee.doYourJob());
 
     }
 

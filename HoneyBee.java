@@ -1,12 +1,7 @@
-public class HoneyBee {
+public abstract class HoneyBee {
 
-    public String fly() {
-        return "I believe, I can fly!";
-    }
+    public abstract String fly();
 
-    public String doYourJob() {
-        return "I'm a Honeybee!";
-    }
-
+    public abstract String doYourJob();
 
 }

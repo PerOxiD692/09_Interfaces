@@ -1,6 +1,4 @@
-public abstract class HoneyBee {
-
-    public abstract String fly();
+public abstract class HoneyBee implements Flyable {
 
     public abstract String doYourJob();
 

@@ -19,7 +19,7 @@ public class App {
 
         Bird bird = new Bird();
         ausgabe(bird.fly());
-        ausgabe(bird.doYourJob());
+        ausgabe(bird.hasFeathers());
 
         // Das sollte eigentlich nicht möglich sein
 	    // --> Lösung: Abstrakte Klasse 

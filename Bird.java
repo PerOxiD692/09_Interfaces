@@ -1,14 +1,14 @@
-public class Bird extends HoneyBee{
+public class Bird implements Flyable, IFeathers{
+
+    @Override
+    public String hasFeathers() {
+        return "I'm a bird, i have feathers!";
+    }
 
     @Override
     public String fly() {
-        return "I'm a bird, I can also fly!";
+        return "I'm a bird, I fly at 25 mph!";
     }
 
-    @Override
-    public String doYourJob() {
-        // das ist ein Bienenverhalten !!!!
-        return "I'm not a fucking bee!";
-    }
     
-}
+}//end Bird

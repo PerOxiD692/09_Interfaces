@@ -9,17 +9,25 @@ public class App {
         ausgabe(worker.doYourJob());
         ausgabe(drone.doYourJob());
 
-        ausgabe("----------------");
+        ausgabe("--------------------");
 
         ausgabe(queen.fly());
         ausgabe(worker.fly());
         ausgabe(drone.fly());
 
-        ausgabe("----------------");
+        ausgabe("--------------------");
 
         Bird bird = new Bird();
         ausgabe(bird.fly());
         ausgabe(bird.hasFeathers());
+
+        ausgabe("---------- Flug Contest ----------");
+
+        flyingCompetition(queen);
+        flyingCompetition(drone);
+        flyingCompetition(worker);
+        flyingCompetition(bird);
+
 
         // Das sollte eigentlich nicht möglich sein
 	    // --> Lösung: Abstrakte Klasse 
@@ -27,6 +35,11 @@ public class App {
         // ausgabe(bee.doYourJob());
 
     }
+
+    private static void flyingCompetition(Flyable obj){
+        ausgabe(obj.fly());
+    }
+
 
     private static void ausgabe(String outStr){
         System.out.println(outStr);
